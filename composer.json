@@ -1,9 +1,9 @@
 {
-    "name": "scssphp/scssphp",
+    "name": "skwirrel/scssphp",
     "type": "library",
-    "description": "scssphp is a compiler for SCSS written in PHP.",
+    "description": "scssphp is a compiler for SCSS written in PHP with a few small additions.",
     "keywords": ["css", "stylesheet", "scss", "sass", "less"],
-    "homepage": "http://scssphp.github.io/scssphp/",
+    "homepage": "https://github.com/skwirrel/scssphp/",
     "license": [
         "MIT"
     ],
