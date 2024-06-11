@@ -318,6 +318,33 @@ final class Compiler
     }
 
     /**
+     * Clear the import cache
+     *
+     * @return void
+     */
+    public function clearImportCache():void {
+        $this->importCache = array();
+    }
+
+    /**
+     * Clear the list of resolved imports
+     *
+     * @return void
+     */
+    public function clearImportList(): void {
+        $this->resolvedImports = array();
+    }
+
+    /**
+     * Get the list of resolved imports
+     *
+     * @return array<string, mixed>
+     */
+    public function getImportList(): array {
+        return  array_column($this->resolvedImports,'filePath');
+    }
+
+    /**
      * Sets an alternative logger.
      *
      * Changing the logger in the middle of the compilation is not
